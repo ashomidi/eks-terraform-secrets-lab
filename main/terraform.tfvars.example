@@ -1,0 +1,8 @@
+# Copy this to terraform.tfvars and edit as needed. Do NOT put db_password here --
+# set it as an environment variable instead (see README.md).
+
+aws_region   = "us-east-1"
+project_name = "eks-postgres-lab"
+
+# While you're just iterating on EKS, set this to false to save RDS free-tier hours:
+create_read_replica = true
